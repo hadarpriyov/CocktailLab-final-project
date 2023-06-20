@@ -1,0 +1,702 @@
+﻿#container {
+    direction: rtl;
+    color: white;
+    background-color: black;
+    font-family:Calibri,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: auto;
+    margin: auto;  
+}
+
+/**דף בית**/
+
+.whole-navbar {
+    display: inline-block;
+    top:80px;
+    margin-right:550px;
+}
+.navbar-level0 
+{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 900;
+}
+.nav-link { /*הגדרות עיצוב של כל שורת התפריט*/
+    font-size: larger;
+    gap:32px;
+    display: inline-block;
+    color: white;
+    width: 120px;
+    height: 30px;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ 
+}
+
+.whole-navbar .nav-link:hover {
+    background-color:goldenrod;
+  
+}
+
+.nav-item { /*שמות ראשיים בתפריט*/
+    display: inline-block;
+   
+}
+
+.navbar-level1 { /*הרמות הפנימיות של סרגל התפריט*/
+    display: none;
+}
+
+.nav-item:hover .nav-item-inner { /*הגדרות עיצוב במעבר עכבר על הרמות הראשונות של התפריט*/
+    display: block;
+    margin-top: 20px; 
+}
+
+.nav-link-inner{
+color: white;
+text-decoration-line: none;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.nav-link-inner-not {
+    color: rgb(96, 92, 92);
+    text-decoration-line: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: not-allowed; /*חסימה של קישור*/
+}
+.nav-link-inner-not2{
+    font-size: larger;
+    color: white;
+    text-decoration-line: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: not-allowed; /*חסימה של קישור*/
+}
+
+.whole-navbar .navbar-level0 .nav-item:hover .navbar-level1 { 
+    display: block;
+    position: absolute;
+}
+
+h1 {
+    margin-top: 40px;
+    font-size:90px;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+h2{
+margin-top: 15px;
+font-size: 20px;
+text-align:center;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+    
+/*עמוד בית*/
+#kotrat {
+    position: relative;
+    color: goldenrod;
+    margin-top: 80px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:800;
+}
+
+.opening {
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+}
+
+/* הכותרת המשנית אחרי פירורי הלחם בעמוד צור קשר*/
+.h2 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    position: relative;
+    font-size: 25px;
+    margin-top: 50px;
+    top: 60px;
+    width: 700px; 
+}
+/* הכותרת המשנית אחרי פירורי הלחם בעמוד אודות*/
+.h2AboutPage{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    position: relative;
+    font-size: 25px;
+    margin-top: 50px;
+    top: 60px;
+    width: 800px;
+    color: goldenrod;
+    margin-left: 10px;
+}
+
+/** זה החלק של הגלריה-עבור העבודת הגשה במבוא לתכנות*/
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+img {
+    vertical-align: middle;
+    width: 250px;
+    height: auto;
+    padding: 20px;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.galleryContainer {
+    position: relative;
+    width: 70% ;
+    height: auto;
+    margin: 0% 15% 10% 0%;
+   
+}
+
+/* Hide the images by default */
+.mySlides {
+    display:table-caption;
+    
+}
+.numbertext{
+    color:white;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+        background-color:goldenrod;
+    }
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    right:0;
+    top:0;
+}
+
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: goldenrod;
+    padding: 2px 16px;
+    color: black;
+    
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both; 
+}
+
+/* Six columns side by side */
+.column {
+    float: right;
+    width: 16.6%; 
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+    .active,
+    .demo:hover {
+        opacity: 1;
+    }
+
+
+/***סוף עיצוב גלריה*/
+
+h3 {
+    text-align: center;
+    padding:10px;
+}
+
+/**פירורי לחם**/
+.breadCrumbs li {
+    
+    padding-right: 80px;
+    display: inline-block;
+    font-size: 16px;
+    padding-bottom: 5px;
+    position: relative;
+    top: 0px;
+    left: 13px;
+    font-family: Calibri;
+    padding: 1px;
+    text-decoration-line:none;
+    z-index: 100;
+    color: white;
+}
+.breadCrumbs li a{
+    color: goldenrod;
+
+}
+
+    .breadCrumbs li:last-child {
+        text-decoration:none;   
+    }
+/*הוספת נקודתיים לאחר הרמה האחרונה הפירורי הלחם בעמוד*/
+        .breadCrumbs li:last-child::after {
+            content: ":";
+        }
+
+ 
+ /* כוסות+הגדרות של עמוד סוגי הקוקטיילים*/ 
+ /*מיקומים - תמונות*/
+
+.poster {
+    width: 200px;
+    height: 300px;
+    min-width: 75px;
+    min-height: 100px;
+    margin: 25.6px 64px;
+    background-repeat: no-repeat;
+    background-size: 101% auto;
+}
+
+.overBox {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.shortText {
+    height: 140px;
+    display: block;
+    padding-top:20px;
+    padding-inline: 20px;
+    text-align:center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.overBox > h2 {
+    top: 20px;
+    position: relative;
+}
+.poster:hover .overBox {
+    color: white;
+    backdrop-filter: blur(2px) brightness(0.3);
+}
+
+/*עכבר*/
+.linkNotWork :hover, .readMoreBut:hover.linkNotWork {
+    cursor: not-allowed ;
+}
+
+/*צבעים וגדלים*/
+#posterArea > div {
+    border: 1px solid white;
+}
+#allCocktails .readMoreBut, #allCocktails .buToRead > div {
+    background-color: goldenrod;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*כפתורים - צבעים וגדלים */
+.readMoreBut {
+    color: white;
+    margin: 0px 6px;
+    padding: 5%;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: medium;
+    width: 70%;
+    text-align: center;
+}
+.readMoreBut:hover {
+    filter: brightness(1.3) grayscale(0.1);
+    color: black;
+}
+
+/*הגדרות של דיפסליים*/
+.poster:hover .overBox, .readMoreBut {
+    display: inline-block;
+}
+#posterArea {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+}
+
+.overBox {
+    display: none;
+}
+
+/*תמונות ורקעים*/
+#cocktail1 {
+    background-image: url("../images/cocktail-1.jpg");
+    background-size: cover;
+}
+
+#cocktail2 {
+    background-image: url("../images/cocktail-2.jpg");
+    background-size: cover;
+}
+
+#cocktail3 {
+    background-image: url("../images/cocktail-3.jpg");
+    background-size: cover;
+}
+#cocktail4 {
+    background-image: url("../images/cocktail-4.jpg");
+    background-size: cover;
+}
+#cocktail5 {
+    background-image: url("../images/cocktail-5.jpg");
+    background-size: cover;
+}
+#cocktail6 {
+    background-image: url("../images/cocktail-6.jpg");
+    background-size: cover;
+}
+#cocktail7 {
+    background-image: url("../images/cocktail-7.jpg");
+    background-size: cover;
+}
+#cocktail8 {
+    background-image: url("../images/cocktail-8.jpg");
+    background-size: cover;
+}
+#cocktail9 {
+    background-image: url("../images/cocktail-9.jpg");
+    background-size: cover;
+}
+
+    
+  /*סוף עמוד סוגי הקוקטיילים*/
+
+/*תחילת עמוד מוצרים-כוסות */
+
+/*צבעים וגדלים*/
+   
+    #allGlass .readMoreBut,  #allGlass .buToRead > div {
+        background-color: goldenrod;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+
+/*תמונות ורקעים*/
+#glass1 {
+        background-image: url("../images/glass-1.jpg");
+       background-size: cover;
+    }
+  
+    #glass2 {
+        background-image: url("../images/glass-2.jpg");
+        background-size: cover;
+    }
+    
+    #glass3 {
+        background-image: url("../images/glass-3.jpg");
+        background-size: cover;
+    }
+    #glass4 {
+        background-image: url("../images/glass-4.jpg");
+        background-size: cover;
+    }
+    #glass5 {
+        background-image: url("../images/glass-1.jpg");
+        background-size:cover;
+      
+        
+    }
+    #glass6 {
+        background-image: url("../images/glass-6.jpg");
+        background-size:cover;
+    }
+    #glass7 {
+        background-image: url("../images/glass-7.jpg");
+        background-size: cover;
+    }
+    #glass8 {
+        background-image: url("../images/glass-8.jpg");
+        background-size: cover;
+    }
+    #glass9 {
+        background-image: url("../images/glass-1.jpg");
+        background-size: cover;
+    }
+     
+    /*סוף עמוד מוצרים-כוסות */
+
+/**** עמוד מפת האתר**/
+
+#mapNav {
+    height: 600px;
+}
+
+.notActive {
+    cursor: not-allowed;  
+}
+
+#mapNav .notActive {
+    color: dimgrey;
+    text-decoration-line:none;
+}
+
+#mapNav ul:first-child > li > a {
+    font-weight: 700;
+    color: white;
+    text-decoration-line: underline;
+}
+
+/*הרחקת הרמה הראשונה מהרמות המשניות*/
+#mapNav ul li ul li:first-child {
+    padding-top: 20px;
+}
+
+#mapNav ul li {
+    margin-bottom: 10px;
+    margin-left: 30px;
+    width: 100px;
+    font-family: Calibri, cursive;
+    font-size: medium;
+}
+
+#mapNav ul:first-child > li {
+    float: right;
+    margin-right:30px;
+    position: relative;
+    top: 60px;
+}
+
+#mapNav ul li ul {
+    padding-right: 0px;
+
+}
+
+.goldMark a {
+    color:goldenrod;
+    text-decoration-line: none;
+}
+
+/**סוף עמוד מפת אתר**/
+
+/** תחילת עיצוב לעמוד אודות**/
+
+#main2 {
+    position: relative;
+    top: 30px;
+    padding-right: 80px;
+}
+
+#main2 #firstsection {
+    padding-top: 30px;
+    width: 700px;
+
+}
+    #main2 #secondsection {
+        padding-top: 30px;
+        width: 700px;
+    }
+
+
+    #main2 section div {
+        padding-bottom: 20px;
+    }
+
+    #main2 h3 {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 700;
+        font-size: 22.4px;
+        text-align: right;
+    }
+
+    #main2 ul {
+        padding-right:20px;
+        padding-top:10px;
+    }
+
+    #main2 li {
+        list-style-image: url('../images/miniCocktail.png');
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: medium;
+        padding-bottom: 12px;
+      
+    }
+
+    #main2 section p {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size:20px;
+        text-align: right;
+    }
+    #main2 li a {
+        color:white;  
+    }
+
+#odotimg {
+    float: left;
+    width: 30%;
+    height: auto;
+    max-height: 550px;
+    filter: drop-shadow(3px 3px 3px #bdafa5 );
+}
+
+#odotimg:hover {
+    float: left;
+    width: 35%;
+    height: auto;
+    max-height: 570px;
+    filter: drop-shadow(3px 3px 3px #bdbba5 );
+}
+#hit{
+    position:relative;
+    width:300px;
+    margin:auto;
+    top:50px; 
+    margin-bottom: 150px;
+}
+   
+
+#hit a {
+
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-right: 40px;
+    text-decoration-line:underline; 
+}
+
+/**עמוד- צור קשר**/
+#text {
+    text-align:right;
+    font-size: larger;
+}
+
+#divimg {
+    position: absolute;
+    margin-right: 450px;
+    margin-top: 50px;
+}
+
+#cocktailImg:hover {
+    width: 700px;
+   }
+
+#main3 {
+    position: relative;
+    top: 50px;
+    padding-right: 80px;
+}
+
+form {
+    margin-top: 30px;
+    width: 300px;
+    padding: 20px;
+    background: goldenrod;
+    border-radius: 40px;
+    margin-bottom: 100px;
+}
+
+.star {
+    font-weight:bold;
+    color:black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+#main3 > div p {
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    padding: 5px;
+}
+
+form label, legend {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    color: black;
+}
+
+.label {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+    color: black;
+}
+
+#Submit1 {
+    border-radius: 30px;
+    border: none;
+    color: black;
+    background-color:white;
+}
+
+    #Submit1:hover {
+        border-radius: 30px;
+        border: none;
+        color:goldenrod;
+        background-color:black;
+    }
+.gender {
+    margin-right:10px;
+}
+
+/**סוף עמוד צור קשר**/ 
+
+/**פוטר-תחתית העמוד**/
+.lows {
+    position: relative;
+    display: inline-block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10px 200px;
+}
+
+.lows a{
+    color: goldenrod;
+    text-decoration:none;
+    font-weight: 900; 
+}
+
+.footercredits {
+ 
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900; 
+}
+
+
+

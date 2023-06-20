@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<head>
+
+    <meta charset="utf-8" />
+    <title>Cooktail Lab- צור קשר</title>
+    <meta name="description" content="צור קשר - Cooktail Lab" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Goni,Hadar" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="icon" href="images/LOGO רק הגרפיקה ובלי הכיתוב.png" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="jScripts/JavaScript.js"></script>
+
+</head>
+<body>
+    <div id="container">
+        <header>  
+            <a href="index.html"><img alt="cocktail-lab-logo" src="images/LOGO.png"/></a>
+            <nav class="whole-navbar" aria-label="עמוד צור קשר-תפריט עליון">  
+                <ul class="navbar-level0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">קוקטיילים</a>
+                        <ul class="navbar-level1">
+                            <li class="nav-item-inner">
+                                <a class="nav-link-inner" href="cocktail_types.html">סוגי קוקטיילים</a>
+                            </li>
+                            <li class="nav-item-inner">
+                                <a class="nav-link-inner-not" href="#">המומלצים שלנו</a>
+                            </li>
+                            <li class="nav-item-inner">
+                                <a class="nav-link-inner-not" href="#">ללא אלכוהול</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link-inner-not2" href="#">הכן בעצמך</a>
+                        <ul class="navbar-level1">
+                            <li class="nav-item-inner">
+                                <a class="nav-link-inner-not" href="#">מתכונים</a>
+                            </li>
+                            <li class="nav-item-inner">
+                                <a class="nav-link-inner-not" href="#">סוג האירוע</a>
+                            </li>
+                            <li class="nav-item-inner">
+                                <a class="nav-link-inner-not" href="#">טעמים</a>
+                            </li>
+                            <li class="nav-item-inner">
+                                <a class="nav-link-inner-not" href="#">בסיס אלכוהול</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">מוצרים</a>
+                        <ul class="navbar-level1">
+                            <li class="nav-item-inner">
+                                <a class="nav-link-inner" href="products_glass.html">כוסות</a>
+                            </li>
+                            <li class="nav-item-inner">
+                                <a class="nav-link-inner-not" href="#">אלכוהול</a>
+                            </li>
+                            <li class="nav-item-inner">
+                                <a class="nav-link-inner-not" href="#">דקורציה</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link-inner-not2" href="#">טיפים&טריקים</a>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+        <h2 class="h2"> cocktail lab -הדרך שלך להכין את המשקה המושלם מתחילה כאן </h2>
+        <nav aria-label="braedcrambs" >
+            <ul class="breadCrumbs">
+                <li><a href="index.html">עמוד הבית ></a> </li>
+                <li>צור קשר</li>
+            </ul>
+        </nav>
+            </div>
+        </header>
+
+        <main id="main3">
+            <h1> צריכים אותנו? </h1>
+            <hr>
+            <div id="divimg">
+                <img src="images/gallary-5.jpg" alt="" title="תמונת קוקטייל" id="cocktailImg" />
+            </div>
+           <div id="text">
+            <p>אם יש לכם שאלות, בקשות או רק רוצים לשתף איתנו התרגשות על קוקטלים מרהיבים, אנחנו כאן כדי לעזור. </p>
+               <p>נשמע את קולכם ונשמח לתת מענה מקצועי, עשיר במידע ורעיונות, שיעזרו לכם ליצור את הקוקטייל המושלם לכל אירוע והזדמנות. </p>
+               <p>צרו איתנו קשר ותובילו אותנו למסע הטעמים המרתק שלכם!</p>
+           </div>
+           <form>
+               <p class="star">* שדה חובה</p><br />
+               <label for="fullName">
+                   <span class="star">*</span> שם מלא:<br />
+                   <input id="fullName" type="text" placeholder="הקלד שם ושם משפחה" required />
+               </label>
+               <br /><br />
+                     <fieldset>
+
+                         <legend><span class="star">*</span>מגדר:</legend><br />
+                         <label for="female" class="gender">
+                             <input id="female" type="radio" name="gender" required  />נקבה
+                         </label><br />
+                         <label for="male" class="gender">
+                             <input id="male" type="radio" name="gender" required />זכר
+                         </label><br />
+                         <label for="other" class="gender">
+                             <input id="other" type="radio" name="gender" required /> אחר
+                         </label>
+                         <br /><br />
+                         <lable for="email"  class="label" id="email1">
+                             <span class="star">*</span> אימייל:<br />
+                             <input id="email" type="email" name="email" required />
+                         </lable>
+                         <br /><br />
+                         <lable for="message" class="label" id="message">
+                             <span class="star">*</span> תוכן ההודעה:<br />
+                             <textarea id="message" rows="5" cols="20" placeholder="כתוב לנו כאן" required></textarea>
+                         </lable>
+                         <br />
+                         <label for="Submit1" >
+                             <input id="Submit1" type="submit" value="שלח לנו" class="label" />
+                         </label>
+                         
+                     </fieldset>
+           </form>
+        </main>
+
+        <footer>
+            <nav aria-label="עמוד צור קשר-תפריט תחתון">
+                <hr>
+                <ul>
+                    <li class="lows"><a href="contactUs.html">צור קשר</a></li>
+                    <li class="lows"><a href="siteMap.html">מפת אתר</a></li>
+                    <li class="lows"><a href="about.html">אודות</a></li>
+                </ul>
+            </nav>
+            <p class="footercredits">
+                ©Cooktail Lab 2023<br />
+                בקרוב תלמד להכין קוקטייל בעצמך
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

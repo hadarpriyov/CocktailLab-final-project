@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html >
+<html lang="">
+  <head>
+  
+    <meta charset="utf-8" />
+    <title>Cooktail Lab- דף הבית</title>
+    <meta name="description" content="דף הבית של אתר - Cooktail Lab" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Goni,Hadar" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="icon" href="images/LOGO רק הגרפיקה ובלי הכיתוב.png" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="jScripts/JavaScript.js"></script>
+
+
+</head>
+<body onload="currentSlide(1)">
+    <div id="container" >
+   
+        <header>  
+            <a href="index.html"><img alt="My Logo" src="images/LOGO.png"/></a>
+            <nav class="whole-navbar" aria-label="עמוד בית-תפריט עליון">
+                <ul class="navbar-level0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">קוקטיילים</a>
+                        <ul class="navbar-level1">
+                            <li class="nav-item-inner">
+                                <a class="nav-link-inner" href="cocktail_types.html">סוגי קוקטיילים</a>
+                            </li>
+                            <li class="nav-item-inner">
+                                <a class="nav-link-inner-not" href="#">המומלצים שלנו</a>
+                            </li>
+                            <li class="nav-item-inner">
+                                <a class="nav-link-inner-not" href="#">ללא אלכוהול</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link-inner-not2" href="#">הכן בעצמך</a>
+                        <ul class="navbar-level1">
+                            <li class="nav-item-inner">
+                                <a class="nav-link-inner-not" href="#">מתכונים</a>
+                            </li>
+                            <li class="nav-item-inner">
+                                <a class="nav-link-inner-not" href="#">סוג האירוע</a>
+                            </li>
+                            <li class="nav-item-inner">
+                                <a class="nav-link-inner-not" href="#">טעמים</a>
+                            </li>
+                            <li class="nav-item-inner">
+                                <a class="nav-link-inner-not" href="#">בסיס אלכוהול</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">מוצרים</a>
+                        <ul class="navbar-level1">
+                            <li class="nav-item-inner">
+                                <a class="nav-link-inner" href="products_glass.html">כוסות</a>
+                            </li>
+                            <li class="nav-item-inner">
+                                <a class="nav-link-inner-not" href="#">אלכוהול</a>
+                            </li>
+                            <li class="nav-item-inner">
+                                <a class="nav-link-inner-not" href="#">דקורציה</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link-inner-not2" href="#">טיפים&טריקים</a>
+                    </li>
+                </ul>
+
+            </nav>
+
+        </header>
+
+        <h1 id="kotrat">הדרך שלך להכין את המשקה המושלם מתחילה כאן</h1>
+            <p class="opening">
+                כאן תוכלו ללמוד כיצד להכין את הקוקטייל המושלם שלכם לפי סוג האירוע שאתם מתכננים!
+            </p>
+            <p class="opening">
+                תלמדו את כל השיטות, הטיפים והטריקים מהצוות המנוסה שלנו ותוכלו לשתף אותנו בתהליך והתוצאות כאן באתר.
+
+            </p>
+        
+            <div class="galleryContainer">
+                <div class="mySlides">
+                    <div class="numbertext">1/6</div>
+                    <img src="images/gallary-1.jpg" style="width:100%" >
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2/6</div>
+                    <img src="images/gallary-2.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3/6</div>
+                    <img src="images/gallary-3.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4/6</div>
+                    <img src="images/gallary-4new.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5/6</div>
+                    <img src="images/gallary-5.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6/6</div>
+                    <img src="images/gallary-6.jpg" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="images/gallary-1.jpg" style="width:100%" onclick="currentSlide(1)" alt="משקאות מוגשים בסטייל">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/gallary-2.jpg" style="width:100%" onclick="currentSlide(2)" alt="קוקטייל עם דובדבן">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/gallary-3.jpg" style="width:100%" onclick="currentSlide(3)" alt="קוקטייל עם פרוסת תפוז">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/gallary-4new.jpg" style="width:100%" onclick="currentSlide(4)" alt="קוקטייל כחול עם לימון">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/gallary-5.jpg" style="width:100%" onclick="currentSlide(5)" alt="כוס עם שמפניה תוססת">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/gallary-6.jpg" style="width:100%" onclick="currentSlide(6)" alt="בר עם מגוון קוקטיילים">
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        
+
+        <footer>
+            <nav aria-label="עמוד בית-תפריט תחתון">
+                <hr>
+                <ul>
+                    <li class="lows"><a href="contactUs.html">צור קשר</a></li>
+                    <li class="lows"><a href="siteMap.html">מפת אתר</a></li>
+                    <li class="lows"><a href="about.html">אודות</a></li>
+                </ul>
+            </nav>
+
+            <p class="footercredits">
+                ©Cooktail Lab 2023<br />
+                בקרוב תלמד להכין קוקטייל בעצמך
+            </p>
+        </footer>
+
+       
+    </div> 
+ </body>
+</html>
